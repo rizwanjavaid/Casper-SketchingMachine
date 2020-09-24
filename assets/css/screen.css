@@ -26,11 +26,10 @@ production stylesheet in assets/built/screen.css
 
 */
 
-
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
-@import "global.css";
 
+@import "global.css";
 body {
     background: #fff;
 }
@@ -50,7 +49,6 @@ body {
     text-indent: -9999px;
 }
 
-
 /* 2. Layout - Page building blocks
 /* ---------------------------------------------------------- */
 
@@ -66,12 +64,14 @@ body {
 }
 
 /* Full width page blocks */
+
 .outer {
     position: relative;
     padding: 0 5vw;
 }
 
 /* Centered content container blocks */
+
 .inner {
     margin: 0 auto;
     max-width: 1040px;
@@ -92,19 +92,15 @@ body {
 /* ---------------------------------------------------------- */
 
 @media (min-width: 900px) {
-    .home-template .post-feed,
-    .tag-template .post-feed,
-    .author-template .post-feed {
+    .home-template .post-feed, .tag-template .post-feed, .author-template .post-feed {
         padding: 40px 0 5vw;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
-
     .home-template .site-nav {
         position: relative;
     }
 }
-
 
 /* 4. Site Header
 /* ---------------------------------------------------------- */
@@ -127,7 +123,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    background: rgba(0, 0, 0, 0.18);
 }
 
 .site-header-background:after {
@@ -140,11 +136,10 @@ body {
     z-index: 10;
     display: block;
     height: 140px;
-    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
-.site-header-background.no-image:before,
-.site-header-background.no-image:after {
+.site-header-background.no-image:before, .site-header-background.no-image:after {
     display: none;
 }
 
@@ -169,7 +164,7 @@ body {
 }
 
 .site-logo {
-    max-height: 55px;
+    max-height: 200px;
 }
 
 .site-description {
@@ -208,7 +203,6 @@ body {
     text-align: center;
 }
 
-
 /* 4.2 Archive header (tag and author post lists)
 /* ---------------------------------------------------------- */
 
@@ -233,12 +227,10 @@ body {
     opacity: 1.0;
 }
 
-
 .site-archive-header .no-image .site-header-content {
     padding: 5vw 0 10px;
     border-bottom: 1px solid color-mod(var(--lightgrey) l(+12%));
 }
-
 
 /* Special header styles for smaller screens */
 
@@ -252,27 +244,22 @@ body {
     .site-home-header .site-title {
         font-size: 4.2rem;
     }
-
     .site-home-header .site-description {
         font-size: 1.8rem;
     }
-
     .site-archive-header .site-header-content {
         flex-direction: column;
         align-items: center;
         min-height: unset;
     }
-
     .site-archive-header .site-title {
         font-size: 4.2rem;
         text-align: center;
     }
-
     .site-archive-header .no-image .site-header-content {
         padding: 12vw 0 20px;
     }
 }
-
 
 /* 5. Site Navigation
 /* ---------------------------------------------------------- */
@@ -303,8 +290,7 @@ body {
     display: flex;
 }
 
-.site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after,
-.site-nav-main .site-nav-left-wrapper:after {
+.site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after, .site-nav-main .site-nav-left-wrapper:after {
     content: "";
     position: absolute;
     top: 0;
@@ -313,10 +299,9 @@ body {
     height: 100%;
 }
 
-.site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after,
-.site-nav-main .site-nav-left-wrapper:after {
+.site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after, .site-nav-main .site-nav-left-wrapper:after {
     right: 0;
-    background: linear-gradient(to right, color-mod(var(--darkgrey) l(-5%) a(0)) 0%,color-mod(var(--darkgrey) l(-5%)) 100%);
+    background: linear-gradient(to right, color-mod(var(--darkgrey) l(-5%) a(0)) 0%, color-mod(var(--darkgrey) l(-5%)) 100%);
 }
 
 .site-nav-left {
@@ -332,7 +317,6 @@ body {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     white-space: nowrap;
-
     -ms-overflow-scrolling: touch;
 }
 
@@ -543,7 +527,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
-.site-nav-right .nav + .subscribe-button {
+.site-nav-right .nav+.subscribe-button {
     margin-left: 24px;
 }
 
@@ -582,22 +566,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .site-home-header .site-nav {
         margin-left: -5vw;
     }
-
     .site-nav-main {
         padding-right: 0;
         padding-left: 0;
     }
-
     .site-nav-left {
         margin-right: 0;
         padding-left: 5vw;
     }
-
     .site-nav-right {
         display: none;
     }
 }
-
 
 /* 6. Post Feed
 /* ---------------------------------------------------------- */
@@ -639,7 +619,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     width: 100%;
     height: 200px;
     background: var(--lightgrey) no-repeat center center;
-
     object-fit: cover;
 }
 
@@ -706,19 +685,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0;
 }
 
-.author-profile-image,
-.avatar-wrapper {
+.author-profile-image, .avatar-wrapper {
     display: block;
     width: 100%;
     height: 100%;
     background: color-mod(var(--lightgrey) l(+10%));
     border-radius: 100%;
-
     object-fit: cover;
 }
 
-.post-card-meta .profile-image-wrapper,
-.post-card-meta .avatar-wrapper {
+.post-card-meta .profile-image-wrapper, .post-card-meta .avatar-wrapper {
     position: relative;
 }
 
@@ -759,7 +735,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     white-space: nowrap;
     background: var(--darkgrey);
     border-radius: 3px;
-    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
     opacity: 0;
     transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: translateY(6px);
@@ -848,46 +824,37 @@ make sure this only happens on large viewports / desktop-ish devices.
         min-height: 280px;
         border-top: 0;
     }
-
     .post-card-large:hover {
         border-bottom-color: color-mod(var(--lightgrey) l(+10%));
     }
-
     .post-card-large:not(.no-image) .post-card-header {
         margin-top: 0;
     }
-
     .post-card-large .post-card-image-link {
         position: relative;
         flex: 1 1 auto;
         margin-bottom: 0;
         min-height: 380px;
     }
-
     .post-card-large .post-card-image {
         position: absolute;
         width: 100%;
         height: 100%;
     }
-
     .post-card-large .post-card-content {
         flex: 0 1 361px;
         justify-content: center;
     }
-
     .post-card-large .post-card-title {
         margin-top: 0;
         font-size: 3.2rem;
     }
-
     .post-card-large .post-card-content-link {
         padding: 0 0 0 40px;
     }
-
     .post-card-large .post-card-meta {
         padding: 0 0 0 40px;
     }
-
     .post-card-large .post-card-excerpt p {
         margin-bottom: 1.5em;
         font-size: 1.8rem;
@@ -895,8 +862,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
-
 /* Adjust some margins for smaller screens */
+
 @media (max-width: 1170px) {
     .post-card {
         margin-bottom: 5vw;
@@ -907,7 +874,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     .post-feed {
         padding-top: 5vw;
     }
-
     .post-card {
         margin-bottom: 5vw;
     }
@@ -917,18 +883,15 @@ make sure this only happens on large viewports / desktop-ish devices.
     .post-card-title {
         font-size: 1.9rem;
     }
-
     .post-card-excerpt {
         font-size: 1.6rem;
     }
 }
 
-
 /* 7. Single Post
 /* ---------------------------------------------------------- */
 
-.post-template .site-main,
-.page-template .site-main {
+.post-template .site-main, .page-template .site-main {
     margin-top: 64px;
     padding-bottom: 4vw;
     background: #fff;
@@ -1030,12 +993,14 @@ make sure this only happens on large viewports / desktop-ish devices.
         padding: 0 11vw;
     }
 }
+
 @media (max-width: 800px) {
     .post-full-content {
         padding: 0 5vw;
         font-size: 1.8rem;
     }
 }
+
 @media (max-width: 500px) {
     .post-full-custom-excerpt {
         font-size: 1.9rem;
@@ -1047,36 +1012,17 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding-top: 0;
 }
 
-.no-image .post-full-content:before,
-.no-image .post-full-content:after {
+.no-image .post-full-content:before, .no-image .post-full-content:after {
     display: none;
 }
 
-.post-full-content h1,
-.post-full-content h2,
-.post-full-content h3,
-.post-full-content h4,
-.post-full-content h5,
-.post-full-content h6,
-.post-full-content p,
-.post-full-content ul,
-.post-full-content ol,
-.post-full-content dl,
-.post-full-content pre,
-.post-full-content blockquote,
-.post-full-comments,
-.footnotes {
+.post-full-content h1, .post-full-content h2, .post-full-content h3, .post-full-content h4, .post-full-content h5, .post-full-content h6, .post-full-content p, .post-full-content ul, .post-full-content ol, .post-full-content dl, .post-full-content pre, .post-full-content blockquote, .post-full-comments, .footnotes {
     margin: 0 0 1.5em 0;
     min-width: 100%;
 }
+
 @media (max-width: 500px) {
-    .post-full-content p,
-    .post-full-content ul,
-    .post-full-content ol,
-    .post-full-content dl,
-    .post-full-content pre,
-    .post-full-comments,
-    .footnotes {
+    .post-full-content p, .post-full-content ul, .post-full-content ol, .post-full-content dl, .post-full-content pre, .post-full-comments, .footnotes {
         margin-bottom: 1.28em;
     }
 }
@@ -1102,8 +1048,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     box-shadow: var(--blue) 0 -1px 0 inset;
 }
 
-.post-full-content strong,
-.post-full-content em {
+.post-full-content strong, .post-full-content em {
     color: color-mod(var(--darkgrey) l(-5%));
 }
 
@@ -1116,20 +1061,18 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin-top: 0;
 }
 
-.post-full-content img,
-.post-full-content video {
+.post-full-content img, .post-full-content video {
     display: block;
     margin: 1.5em auto;
     max-width: 1040px;
     height: auto;
 }
+
 @media (max-width: 1040px) {
-    .post-full-content img,
-    .post-full-content video {
+    .post-full-content img, .post-full-content video {
         width: 100%;
     }
 }
-
 
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper
@@ -1139,11 +1082,11 @@ Usage (In Ghost edtior):
 ![img](/some/image.jpg#full)
 
 */
+
 .post-full-content img[src$="#full"] {
     max-width: none;
     width: 100vw;
 }
-
 
 /* Image captions
 
@@ -1153,15 +1096,16 @@ Usage (In Ghost editor):
 <small>Your image caption</small>
 
 */
-.post-full-content img + br + small {
+
+.post-full-content img+br+small {
     display: block;
     margin-top: -3em;
     margin-bottom: 1.5em;
     text-align: center;
 }
 
-
 /* Override third party iframe styles */
+
 .post-full-content iframe {
     margin: 0 auto !important;
 }
@@ -1171,6 +1115,7 @@ Usage (In Ghost editor):
     padding: 0 1.5em;
     border-left: color-mod(var(--blue)) 3px solid;
 }
+
 @media (max-width: 500px) {
     .post-full-content blockquote {
         padding: 0 1.3em;
@@ -1252,16 +1197,11 @@ Usage (In Ghost editor):
     transform: rotate(45deg);
 }
 
-.post-full-content hr + p {
+.post-full-content hr+p {
     margin-top: 1.2em;
 }
 
-.post-full-content h1,
-.post-full-content h2,
-.post-full-content h3,
-.post-full-content h4,
-.post-full-content h5,
-.post-full-content h6 {
+.post-full-content h1, .post-full-content h2, .post-full-content h3, .post-full-content h4, .post-full-content h5, .post-full-content h6 {
     color: color-mod(var(--darkgrey) l(-5%));
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -1272,9 +1212,11 @@ Usage (In Ghost editor):
     line-height: 1.25em;
     font-weight: 600;
 }
-.post-full-content p + h1 {
+
+.post-full-content p+h1 {
     margin-top: 0.8em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h1 {
         font-size: 3.2rem;
@@ -1288,9 +1230,11 @@ Usage (In Ghost editor):
     line-height: 1.25em;
     font-weight: 600;
 }
-.post-full-content p + h2 {
+
+.post-full-content p+h2 {
     margin-top: 0.8em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h2 {
         margin-bottom: 0.3em;
@@ -1305,9 +1249,11 @@ Usage (In Ghost editor):
     line-height: 1.3em;
     font-weight: 600;
 }
-.post-full-content h2 + h3 {
+
+.post-full-content h2+h3 {
     margin-top: 0.7em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h3 {
         margin-bottom: 0.3em;
@@ -1321,12 +1267,15 @@ Usage (In Ghost editor):
     font-size: 2.5rem;
     font-weight: 600;
 }
-.post-full-content h2 + h4 {
+
+.post-full-content h2+h4 {
     margin-top: 0.7em;
 }
-.post-full-content h3 + h4 {
+
+.post-full-content h3+h4 {
     margin-top: 0;
 }
+
 @media (max-width: 800px) {
     .post-full-content h4 {
         margin-bottom: 0.3em;
@@ -1341,17 +1290,19 @@ Usage (In Ghost editor):
     padding: 0.4em 1em 0.9em;
     border: 0;
     color: var(--blue);
-    font-family: Georgia,serif;
+    font-family: Georgia, serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
 }
+
 @media (min-width: 1180px) {
     .post-full-content h5 {
         max-width: 1060px;
         width: 100vw;
     }
 }
+
 @media (max-width: 800px) {
     .post-full-content h5 {
         margin-bottom: 1em;
@@ -1367,6 +1318,7 @@ Usage (In Ghost editor):
     font-size: 2.0rem;
     font-weight: 700;
 }
+
 @media (max-width: 800px) {
     .post-full-content h6 {
         font-size: 1.8rem;
@@ -1395,12 +1347,12 @@ Usage (In Ghost editor):
 }
 
 /* Some grouped styles for smaller viewports */
+
 @media (max-width: 1170px) {
     .post-full-image {
         margin: 25px -6vw 50px;
         border-radius: 0;
     }
-
     .post-full-image img {
         max-width: 1170px;
     }
@@ -1417,29 +1369,25 @@ Usage (In Ghost editor):
         font-size: 1.2rem;
         line-height: 1.3em;
     }
-
     .post-full-title {
         margin-top: 0.2em;
         font-size: 4.2rem;
         line-height: 1.05em;
     }
-
     .post-full-image {
         margin-top: 5px;
         margin-bottom: 5vw;
     }
-
     .post-full-content {
         padding: 0;
     }
-
-    .post-full-content:before,
-    .post-full-content:after {
+    .post-full-content:before, .post-full-content:after {
         display: none;
     }
 }
 
 /* Tables */
+
 .post-full-content table {
     display: inline-block;
     overflow-x: auto;
@@ -1463,13 +1411,13 @@ Usage (In Ghost editor):
 }
 
 .post-full-content table td:first-child {
-    background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-size: 20px 100%;
     background-repeat: no-repeat;
 }
 
 .post-full-content table td:last-child {
-    background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-position: 100% 0;
     background-size: 20px 100%;
     background-repeat: no-repeat;
@@ -1485,12 +1433,10 @@ Usage (In Ghost editor):
     background-color: color-mod(var(--whitegrey) l(+4%));
 }
 
-.post-full-content table th,
-.post-full-content table td {
+.post-full-content table th, .post-full-content table td {
     padding: 6px 12px;
     border: color-mod(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
 }
-
 
 /* 7.1. Post Byline
 /* ---------------------------------------------------------- */
@@ -1520,7 +1466,8 @@ Usage (In Ghost editor):
     font-size: 1.2rem;
     line-height: 1.2em;
     letter-spacing: 0.2px;
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    ;
 }
 
 .post-full-byline-meta h4 {
@@ -1568,7 +1515,7 @@ Usage (In Ghost editor):
     line-height: 1.5em;
     background: white;
     border-radius: 3px;
-    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
+    box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
     opacity: 0;
     transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: scale(0.98) translateY(15px);
@@ -1651,7 +1598,6 @@ Usage (In Ghost editor):
         margin-left: -50px;
         width: 430px;
     }
-
     .author-list-item .author-card:before {
         left: 50px;
     }
@@ -1668,24 +1614,21 @@ Usage (In Ghost editor):
         width: 36px;
         height: 36px;
     }
-
     .post-full-byline {
         margin-top: 20px;
     }
-
     .post-full-byline-meta {
         font-size: 1.2rem;
     }
-
     .post-full-byline-meta h4 {
         margin-bottom: 2px;
         font-size: 1.2rem;
     }
 }
 
-
 /* 7.2. Members Subscribe Form
 /* ---------------------------------------------------------- */
+
 .subscribe-form {
     margin: 1.5em 0;
     padding: 6.5vw 7vw 8vw;
@@ -1737,7 +1680,6 @@ Usage (In Ghost editor):
     user-select: text;
     border-radius: 5px;
     transition: border-color 0.15s linear;
-
     -webkit-appearance: none;
 }
 
@@ -1758,25 +1700,16 @@ Usage (In Ghost editor):
     line-height: 39px;
     font-weight: 400;
     text-align: center;
-    background: linear-gradient(
-    color-mod(var(--blue) whiteness(+7%)),
-    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color-mod(var(--blue) lightness(-4%) saturation(-10%))
-    );
+    background: linear-gradient( color-mod(var(--blue) whiteness(+7%)), color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%, color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%, color-mod(var(--blue) lightness(-4%) saturation(-10%)));
     border-radius: 5px;
-
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.subscribe-form button:active,
-.subscribe-form button:focus {
+.subscribe-form button:active, .subscribe-form button:focus {
     background: color-mod(var(--blue) lightness(-9%) saturation(-10%));
 }
 
-.subscribe-form .button-loader,
-.subscribe-form .message-success,
-.subscribe-form .message-error {
+.subscribe-form .button-loader, .subscribe-form .message-success, .subscribe-form .message-error {
     display: none;
 }
 
@@ -1793,14 +1726,11 @@ Usage (In Ghost editor):
     transform: scale(0.7);
 }
 
-.subscribe-form .button-loader svg path,
-.subscribe-form .button-loader svg rect {
+.subscribe-form .button-loader svg path, .subscribe-form .button-loader svg rect {
     fill: #fff;
 }
 
-.subscribe-form .success .message-success,
-.subscribe-form .invalid .message-error,
-.subscribe-form .error .message-error {
+.subscribe-form .success .message-success, .subscribe-form .invalid .message-error, .subscribe-form .error .message-error {
     margin: 1em auto 0;
     max-width: 400px;
     color: var(--red);
@@ -1814,17 +1744,14 @@ Usage (In Ghost editor):
     color: color-mod(var(--green) l(-5%));
 }
 
-.subscribe-form .invalid .message-error,
-.subscribe-form .error .message-error {
+.subscribe-form .invalid .message-error, .subscribe-form .error .message-error {
     display: block;
 }
-
 
 @media (max-width: 650px) {
     .subscribe-form-title {
         font-size: 2.4rem;
     }
-
     .subscribe-form-description {
         font-size: 1.6rem;
     }
@@ -1834,18 +1761,15 @@ Usage (In Ghost editor):
     .subscribe-form form {
         flex-direction: column;
     }
-
     .subscribe-form .form-group {
         flex-direction: column;
         width: 100%;
     }
-
     .subscribe-form button {
         margin: 10px 0 0 0;
         width: 100%;
     }
 }
-
 
 /* 7.3. Comments
 /* ---------------------------------------------------------- */
@@ -1854,7 +1778,6 @@ Usage (In Ghost editor):
     margin: 0 auto;
     max-width: 840px;
 }
-
 
 /* 7.4. Related posts
 /* ---------------------------------------------------------- */
@@ -2047,14 +1970,12 @@ Usage (In Ghost editor):
         flex-direction: column;
         padding: 25px 0 0;
     }
-
     .read-next-card {
         flex: 1 1 auto;
         margin: 0 25px;
         padding: 0;
         background: none;
     }
-
     .read-next .post-card {
         flex: 1 1 auto;
         margin: 25px;
@@ -2062,7 +1983,6 @@ Usage (In Ghost editor):
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
-
 
 /* 7.5. Koenig Styles
 /* ---------------------------------------------------------- */
@@ -2079,7 +1999,8 @@ Usage (In Ghost editor):
 }
 
 /* Preventing full-width image overlap with post image.  */
-.post-full-image + .post-full-content .kg-content *:first-child .kg-image {
+
+.post-full-image+.post-full-content .kg-content *:first-child .kg-image {
     width: 100%;
 }
 
@@ -2095,10 +2016,7 @@ Usage (In Ghost editor):
     margin: 0.8em 0 2.3em;
 }
 
-.post-full-content h1 + figure,
-.post-full-content h2 + figure,
-.post-full-content h3 + figure,
-.post-full-content h4 + figure {
+.post-full-content h1+figure, .post-full-content h2+figure, .post-full-content h3+figure, .post-full-content h4+figure {
     margin-top: 2em;
 }
 
@@ -2130,7 +2048,6 @@ Usage (In Ghost editor):
 .kg-embed-card .fluid-width-video-wrapper {
     margin: 0;
 }
-
 
 @media (max-width: 1040px) {
     .post-full-content .kg-width-full .kg-image {
@@ -2166,14 +2083,12 @@ Usage (In Ghost editor):
     margin: 0 0 0 0.75em;
 }
 
-.kg-gallery-card + .kg-image-card.kg-width-wide,
-.kg-gallery-card + .kg-gallery-card,
-.kg-image-card.kg-width-wide + .kg-gallery-card,
-.kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
+.kg-gallery-card+.kg-image-card.kg-width-wide, .kg-gallery-card+.kg-gallery-card, .kg-image-card.kg-width-wide+.kg-gallery-card, .kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
 }
 
 /* keep existing <pre> styles for code cards with captions */
+
 .kg-code-card {
     width: 100%;
 }
@@ -2186,7 +2101,7 @@ Usage (In Ghost editor):
     width: 100%;
 }
 
-.kg-card + .kg-bookmark-card {
+.kg-card+.kg-bookmark-card {
     margin-top: 0;
 }
 
@@ -2236,7 +2151,6 @@ Usage (In Ghost editor):
     font-size: 1.5rem;
     line-height: 1.5em;
     font-weight: 400;
-
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
@@ -2254,7 +2168,6 @@ Usage (In Ghost editor):
     width: 100%;
     height: 100%;
     border-radius: 0 3px 3px 0;
-
     object-fit: cover;
 }
 
@@ -2295,52 +2208,38 @@ Usage (In Ghost editor):
     .post-full-content figure {
         margin: 0.2em 0 1.3em;
     }
-
-    .post-full-content h1 + figure,
-    .post-full-content h2 + figure,
-    .post-full-content h3 + figure,
-    .post-full-content h4 + figure {
+    .post-full-content h1+figure, .post-full-content h2+figure, .post-full-content h3+figure, .post-full-content h4+figure {
         margin-top: 0.9em;
     }
 }
 
 @media (max-width: 500px) {
-    .post-full-content .kg-width-wide,
-    .post-full-content .kg-width-full {
+    .post-full-content .kg-width-wide, .post-full-content .kg-width-full {
         margin-right: -5vw;
         margin-left: -5vw;
     }
-
     .post-full-content figcaption {
         margin-bottom: 0.4em;
     }
-
     .post-full-content .kg-bookmark-container {
         flex-direction: column;
     }
-
-    .kg-bookmark-title,
-    .kg-bookmark-description,
-    .kg-bookmark-metadata {
+    .kg-bookmark-title, .kg-bookmark-description, .kg-bookmark-metadata {
         font-size: 1.4rem;
         line-height: 1.5em;
     }
-
     .post-full-content .kg-bookmark-icon {
         width: 18px;
         height: 18px;
     }
-
     .kg-bookmark-thumbnail {
         order: 1;
         min-height: 160px;
         width: 100%;
     }
-
     .kg-bookmark-thumbnail img {
         border-radius: 3px 3px 0 0;
     }
-
     .kg-bookmark-content {
         order: 2;
     }
@@ -2348,6 +2247,7 @@ Usage (In Ghost editor):
 
 /* 8. Author Template
 /* ---------------------------------------------------------- */
+
 .author-header {
     display: flex;
     flex-direction: row;
@@ -2377,7 +2277,7 @@ Usage (In Ghost editor):
     margin: -4px 0 0;
     width: 110px;
     height: 110px;
-    box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 6px;
 }
 
 .author-header-content .author-bio {
@@ -2437,9 +2337,7 @@ Usage (In Ghost editor):
     padding: 6px 0;
 }
 
-.author-location + .author-stats:before,
-.author-stats + .author-social-link:before,
-.author-social-link + .author-social-link:before {
+.author-location+.author-stats:before, .author-stats+.author-social-link:before, .author-social-link+.author-social-link:before {
     content: "\2022";
     display: inline-block;
     margin: 0 12px;
@@ -2447,16 +2345,12 @@ Usage (In Ghost editor):
     opacity: 0.6;
 }
 
-.no-image .author-location + .author-stats:before,
-.no-image .author-stats + .author-social-link:before,
-.no-image .author-social-link + .author-social-link:before {
+.no-image .author-location+.author-stats:before, .no-image .author-stats+.author-social-link:before, .no-image .author-social-link+.author-social-link:before {
     color: var(--midgrey);
 }
 
 @media (max-width: 700px) {
-    .author-location,
-    .author-stats,
-    .author-stats + .author-social-link:first-of-type:before {
+    .author-location, .author-stats, .author-stats+.author-social-link:first-of-type:before {
         display: none;
     }
 }
@@ -2465,40 +2359,31 @@ Usage (In Ghost editor):
     .author-header {
         padding: 10px 0 0;
     }
-
     .no-image .author-header {
         padding-bottom: 10px;
     }
-
     .author-header-content {
         align-items: center;
         margin: 16px 0 0 0;
     }
-
     .site-header-content .author-profile-image {
         width: 96px;
         height: 96px;
     }
-
     .author-header-content .author-bio {
         font-size: 1.8rem;
         line-height: 1.3em;
         letter-spacing: 0;
         text-align: center;
     }
-
     .author-header-content .author-meta {
         margin-top: 8px;
     }
-
-    .author-location + .author-stats:before,
-    .author-stats + .author-social-link:before,
-    .author-social-link + .author-social-link:before {
+    .author-location+.author-stats:before, .author-stats+.author-social-link:before, .author-social-link+.author-social-link:before {
         display: inline;
         margin: 0 6px;
     }
 }
-
 
 /* 9. Error Template
 /* ---------------------------------------------------------- */
@@ -2580,7 +2465,6 @@ Usage (In Ghost editor):
     }
 }
 
-
 /* 10. Subscribe Message and Overlay
 /* ---------------------------------------------------------- */
 
@@ -2616,8 +2500,7 @@ Usage (In Ghost editor):
     height: 100%;
 }
 
-.subscribe-success-message .subscribe-close-button:before,
-.subscribe-success-message .subscribe-close-button:after {
+.subscribe-success-message .subscribe-close-button:before, .subscribe-success-message .subscribe-close-button:after {
     top: 31px;
     right: 20px;
     width: 18px;
@@ -2669,8 +2552,7 @@ Usage (In Ghost editor):
     transform: rotate(-45deg);
 }
 
-.subscribe-close-overlay:hover,
-.subscribe-close-button:hover {
+.subscribe-close-overlay:hover, .subscribe-close-button:hover {
     cursor: default;
 }
 
@@ -2684,7 +2566,7 @@ Usage (In Ghost editor):
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(9,10,11,0.97);
+    background: rgba(9, 10, 11, 0.97);
     opacity: 0;
     transition: opacity 0.2s ease-in;
     pointer-events: none;
@@ -2760,7 +2642,6 @@ Usage (In Ghost editor):
     user-select: text;
     border-radius: 8px;
     transition: border-color 0.15s linear;
-
     -webkit-appearance: none;
 }
 
@@ -2780,19 +2661,12 @@ Usage (In Ghost editor):
     line-height: 38px;
     font-weight: 400;
     text-align: center;
-    background: linear-gradient(
-    color-mod(var(--blue) whiteness(+7%)),
-    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color-mod(var(--blue) lightness(-4%) saturation(-10%))
-    );
+    background: linear-gradient( color-mod(var(--blue) whiteness(+7%)), color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%, color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%, color-mod(var(--blue) lightness(-4%) saturation(-10%)));
     border-radius: 8px;
-
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.subscribe-overlay button:active,
-.subscribe-overlay button:focus {
+.subscribe-overlay button:active, .subscribe-overlay button:focus {
     background: color-mod(var(--blue) lightness(-9%) saturation(-10%));
 }
 
@@ -2805,7 +2679,6 @@ Usage (In Ghost editor):
         margin: 12px 0 0;
     }
 }
-
 
 /* 11. Site Footer
 /* ---------------------------------------------------------- */
@@ -2823,16 +2696,16 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.3rem;
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .site-footer-content a:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
@@ -2865,234 +2738,173 @@ Usage (In Ghost editor):
     .site-footer-content {
         flex-direction: column;
     }
-
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
 }
 
-
 /* 12. Dark Mode
 /* ---------------------------------------------------------- */
+
 @media (prefers-color-scheme: dark) {
     body {
         color: rgba(255, 255, 255, 0.75);
         background: var(--darkmode);
     }
-
     img {
         opacity: 0.9;
     }
-
     .site-header-background:before {
-        background: rgba(0,0,0,0.6);
+        background: rgba(0, 0, 0, 0.6);
     }
-
     .post-feed {
         background: var(--darkmode);
     }
-
-    .post-card,
-    .post-card:hover {
+    .post-card, .post-card:hover {
         border-bottom-color: color-mod(var(--darkmode) l(+8%));
     }
-
     .author-profile-image {
         background: var(--darkmode);
     }
-
     .post-card-byline-content a {
         color: rgba(255, 255, 255, 0.75);
     }
-
     .post-card-byline-content a:hover {
         color: #fff;
     }
-
     .post-card-image {
         background: var(--darkmode);
     }
-
     .post-card-title {
         color: rgba(255, 255, 255, 0.85);
     }
-
     .post-card-excerpt {
         color: color-mod(var(--midgrey) l(+10%));
     }
-
-    .author-avatar,
-    .static-avatar {
+    .author-avatar, .static-avatar {
         border-color: color-mod(var(--darkgrey) l(+2%));
     }
-
-    .site-main,
-    .post-template .site-main,
-    .page-template .site-main {
+    .site-main, .post-template .site-main, .page-template .site-main {
         background: var(--darkmode);
     }
-
     .post-full-content {
         background: var(--darkmode);
     }
-
     .post-full-title {
         color: rgba(255, 255, 255, 0.9);
     }
-
     .post-full-custom-excerpt {
         color: color-mod(var(--midgrey) l(+10%));
     }
-
     .post-full-image {
         background-color: color-mod(var(--darkmode) l(+8%));
     }
-
     .post-full-byline {
         border-top-color: color-mod(var(--darkmode) l(+15%));
     }
-
     .post-full-byline-meta h4 a {
         color: rgba(255, 255, 255, 0.75);
     }
-
     .post-full-byline-meta h4 a:hover {
         color: #fff;
     }
-
     .author-list-item .author-card {
         background: color-mod(var(--darkmode) l(+4%));
-        box-shadow: 0 12px 26px rgba(0,0,0,0.4);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
     }
-
     .author-list-item .author-card:before {
         border-top-color: color-mod(var(--darkmode) l(+4%));
     }
-
     .no-image .author-social-link a {
         color: rgba(255, 255, 255, 0.75);
     }
-
-    .post-full-content h1,
-    .post-full-content h2,
-    .post-full-content h3,
-    .post-full-content h4,
-    .post-full-content h6 {
+    .post-full-content h1, .post-full-content h2, .post-full-content h3, .post-full-content h4, .post-full-content h6 {
         color: rgba(255, 255, 255, 0.9);
     }
-
     .post-full-content a {
         color: #fff;
         box-shadow: inset 0 -1px 0 #fff;
     }
-
     .post-full-content strong {
         color: #fff;
     }
-
     .post-full-content em {
         color: #fff;
     }
-
     .post-full-content code {
         color: #fff;
         background: #000;
     }
-
     hr {
         border-top-color: color-mod(var(--darkmode) l(+8%));
     }
-
     .post-full-content hr:after {
         background: color(var(--darkmode) l(+8%));
         box-shadow: var(--darkmode) 0 0 0 5px;
     }
-
     .post-full-content figcaption {
         color: rgba(255, 255, 255, 0.6);
     }
-
     .post-full-content table td:first-child {
         background-image: linear-gradient(to right, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
     }
-
     .post-full-content table td:last-child {
         background-image: linear-gradient(to left, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
     }
-
     .post-full-content table th {
         color: rgba(255, 255, 255, 0.85);
         background-color: color-mod(var(--darkmode) l(+8%));
     }
-
-    .post-full-content table th,
-    .post-full-content table td {
+    .post-full-content table th, .post-full-content table td {
         border: color-mod(var(--darkmode) l(+8%)) 1px solid;
     }
-
-    .post-full-content .kg-bookmark-container,
-    .post-full-content .kg-bookmark-container:hover {
+    .post-full-content .kg-bookmark-container, .post-full-content .kg-bookmark-container:hover {
         color: rgba(255, 255, 255, 0.75);
-        box-shadow: 0 0 1px rgba(255,255,255,0.9);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
     }
-
     .kg-bookmark-title {
         color: #fff;
     }
-
     .kg-bookmark-description {
         color: rgba(255, 255, 255, 0.75);
     }
-
     .kg-bookmark-metadata {
         color: rgba(255, 255, 255, 0.75);
     }
-
     .site-archive-header .no-image {
         color: rgba(255, 255, 255, 0.9);
         background: var(--darkmode);
     }
-
     .site-archive-header .no-image .site-header-content {
         border-bottom-color: color-mod(var(--darkmode) l(+15%));
     }
-
     .site-header-content .author-profile-image {
-        box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
+        box-shadow: 0 0 0 6px hsla(0, 0%, 100%, 0.04);
     }
-
     .subscribe-form {
         border: none;
         background: linear-gradient(color-mod(var(--darkmode) l(-6%)), color-mod(var(--darkmode) l(-3%)));
     }
-
     .subscribe-form-title {
         color: rgba(255, 255, 255, 0.9);
     }
-
     .subscribe-form p {
         color: rgba(255, 255, 255, 0.7);
     }
-
     .subscribe-email {
         border-color: color-mod(var(--darkmode) l(+6%));
         color: rgba(255, 255, 255, 0.9);
         background: color-mod(var(--darkmode) l(+3%));
     }
-
     .subscribe-email:focus {
         border-color: color-mod(var(--darkmode) l(+25%));
     }
-
     .subscribe-form button {
         opacity: 0.9;
     }
-
-    .subscribe-form .invalid .message-error,
-    .subscribe-form .error .message-error {
+    .subscribe-form .invalid .message-error, .subscribe-form .error .message-error {
         color: color-mod(var(--red) l(+5%) s(-5%));
     }
-
     .subscribe-form .success .message-success {
         color: color-mod(var(--green) l(+5%) s(-5%));
     }
