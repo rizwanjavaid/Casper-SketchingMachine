@@ -2,7 +2,7 @@
     "name": "theme-sketchingmachine",
     "description": "The theme used for the Sketching Machine website",
     "demo": "https://sketchingmachine.com",
-    "version": "1.0",
+    "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -42,7 +42,12 @@
         "url": "https://github.com/rizwanjavaid/theme-sketchingmachine.git"
     },
     "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "contributors": [
+        {
+        "name": "Rizwan Javaid",
+        "email": "rizwan@rizwanjavaid.com"
+    }
+],
     "devDependencies": {
         "@tryghost/release-utils": "0.6.7",
         "autoprefixer": "10.0.0",
@@ -56,6 +61,7 @@
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.0.2",
         "inquirer": "7.3.3",
+        "postcss": "8.0.2",
         "postcss-color-mod-function": "3.0.3",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0"
