@@ -164,7 +164,7 @@ body {
 }
 
 .site-logo {
-    max-height: 100px;
+    max-height: 200px;
 }
 
 .site-description {
@@ -550,6 +550,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .home-template .site-nav-main {
     z-index: 100;
+    background: #1A0311;
 }
 
 .home-template .site-nav-main .site-nav {
