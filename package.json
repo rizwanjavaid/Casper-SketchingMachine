@@ -35,7 +35,8 @@
         ]
     },
     "keywords": [
-        "sketching-machine"
+        "sketching-machine",
+        "ghost-theme"
     ],
     "repository": {
         "type": "git",
@@ -44,10 +45,10 @@
     "bugs": "https://github.com/TryGhost/Casper/issues",
     "contributors": [
         {
-        "name": "Rizwan Javaid",
-        "email": "rizwan@rizwanjavaid.com"
-    }
-],
+            "name": "Rizwan Javaid",
+            "email": "rizwan@rizwanjavaid.com"
+        }
+    ],
     "devDependencies": {
         "@tryghost/release-utils": "0.6.7",
         "autoprefixer": "10.0.0",
