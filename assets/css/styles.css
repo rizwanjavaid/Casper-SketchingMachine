@@ -1,0 +1,117 @@
+.page-template .site-main, .post-full-content, .post-template .site-main {
+  background: none;
+  background-color: #fff;
+}
+
+.site-main {
+  background-color: #D5008F;
+}
+
+.post-feed {
+  background: none;
+  background-color: #D5008F;
+}
+
+.site-header-background {
+  color: #fff;
+  background-color: #D5008F;
+}
+
+.site-home-header .site-description {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.post-card-primary-tag {
+  color: #ffff00;
+}
+
+.post-card-excerpt {
+  color: #fff;
+  font-family: 'Georgia', sans-serif;
+}
+
+.post-card-title {
+  color: #ffff00;
+}
+
+.post-card-primary-tag {
+  color: #1A0311;
+}
+
+.post-card-byline-content {
+  color: #1A0311;
+}
+
+.home-template.site-footer-content {
+  background-color: #D5008F;
+}
+
+.site-footer {
+  color: #fff;
+  background: #D5008F;
+}
+
+.post-full-custom-excerpt {
+  color: #443d43;
+}
+
+.post-full-title {
+  color: #1A0311;
+}
+
+.post-template .post-content {
+  color: #1A0311;
+}
+
+.post-full-content h1, .post-full-content h2, .post-full-content h3, .post-full-content h4, .post-full-content h6 {
+  color: #1A0311;
+}
+
+.post-full-content em, .post-full-content strong {
+  color: #1A0311;
+}
+
+.read-next {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+  background: #D5008F;
+}
+
+.read-next .post-card-excerpt {
+  color: #fff;
+}
+
+.post-full-byline-meta h4 a {
+  color: #D5008F;
+}
+
+.post-full-content a {
+  color: #D5008F;
+}
+
+.post-full-content a:hover {
+  text-decoration: underline;
+  color: #D5008F;
+}
+
+.site-description {
+  opacity: 1;
+}
+
+.kg-bookmark-description, .kg-bookmark-metadata, .kg-bookmark-title {
+  color: #1A0311;
+}
+
+.post-card-template .post-card-primary-title, .read-next .post-card-title {
+  color: #ffff00;
+}
+
+.author-avatar, .static-avatar {
+  border: none;
+}
+
+.static-avatar {
+  border: 1px #fff;
+}

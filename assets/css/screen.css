@@ -110,7 +110,7 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #fff;
-    background: color-mod(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: var(--smPink) no-repeat center center;
     background-size: cover;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 .site-logo {
-    max-height: 50px;
+    max-height: 150px;
 }
 
 .site-description {
@@ -301,7 +301,8 @@ body {
 
 .site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after, .site-nav-main .site-nav-left-wrapper:after {
     right: 0;
-    background: linear-gradient(to right, color-mod(var(--darkgrey) l(-5%) a(0)) 0%, color-mod(var(--darkgrey) l(-5%)) 100%);
+    background: none;
+    /* background: linear-gradient(to right, color-mod(var(--darkgrey) l(-5%) a(0)) 0%, color-mod(var(--darkgrey) l(-5%)) 100%); */
 }
 
 .site-nav-left {
@@ -354,7 +355,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-logo img {
     display: block;
     width: auto;
-    height: 21px;
+    height: 50px;
+    margin-top: -14px;
 }
 
 .site-home-header .site-nav-logo {
