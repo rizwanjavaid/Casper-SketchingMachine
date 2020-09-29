@@ -83,6 +83,11 @@
   color: #fff;
 }
 
+.read-next-card {
+  background: none;
+  border: 1px #fff;
+}
+
 .post-full-byline-meta h4 a {
   color: #D5008F;
 }
