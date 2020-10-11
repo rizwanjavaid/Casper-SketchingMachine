@@ -1,3 +1,8 @@
+body {
+  background-image: url("/assets/images/bg-pinkwithblackdots.jpg");
+  background-position: right top;
+}
+
 .page-template .site-main, .post-full-content, .post-template .site-main {
   background: none;
   background-color: #fff;
