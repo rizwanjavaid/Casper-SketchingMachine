@@ -1,5 +1,5 @@
 body {
-  background-image: url("/assets/images/bg-pinkwithblackdots.webp");
+  background-color: #fff;
 }
 
 .page-template .site-main, .post-full-content, .post-template .site-main {
@@ -17,8 +17,7 @@ body {
 }
 
 .site-header-background {
-  background-image: url("/assets/images/bg-pinkwithblackdots.jpg");
-  background-color: #FFA3D7;
+  background-color: #fff;
 }
 
 .site-home-header .site-description {
